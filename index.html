@@ -853,26 +853,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const mainNav = document.getElementById("main-nav");
-
-  hamburger.addEventListener("click", function () {
-    mainNav.classList.toggle("open");
-    hamburger.classList.toggle("open");
-    hamburger.setAttribute("aria-expanded", mainNav.classList.contains("open"));
-  });
-
-  mainNav.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", function () {
-      mainNav.classList.remove("open");
-      hamburger.classList.remove("open");
-      hamburger.setAttribute("aria-expanded", "false");
-    });
-  });
-</script>
-
 <script src="script.js"></script>
+
+<!-- Mobile Quick Action Bar -->
+<div class="mobile-action-bar">
+  <a href="tel:+923356909090" class="action-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+  <a href="https://wa.me/923356909090" target="_blank" class="action-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+</div>
 
 </body>
 </html>
